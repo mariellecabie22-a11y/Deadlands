@@ -71,9 +71,113 @@ p{
 .social-card:hover {
     transform: scale(1.05);
 }
-<body>
+.fan-form {
+    margin-top: 30px;
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+}
 
-<header>
+.fan-form h4 {
+    text-align: center;
+    background-color: grey;
+    padding: 8px 0;
+    margin-bottom: 15px;
+}
+
+.fan-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fan-form input,
+.fan-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.fan-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.fan-form button {
+    padding: 12px;
+    background: #e63946;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fan-form button:hover {
+    background: #c92c38;
+}
+footer {
+    background-color: #111;      
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 0;
+}
+
+footer input[type="email"] {
+    padding: 8px;
+    width: 250px;
+    max-width: 80%;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+footer button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f04;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer button:hover {
+    background-color: #c03;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+@media (max-width: 480px) {
+
+    header {
+        padding: 80px 10px; 
+    }
+    .float-container h3 {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 40px 5px;
+    }
+    .float-container h4 {
+      font-size: 1rem;
+        line-height: 1.6;
+        padding: 5px 2.5px;
+    }
+    .gallery img {
+        width: 100%;
+    }
+  }
+</style>
+<body>
+  <header>
     <h1 class="logo-text">Deadlands</h1>
 </header>
 
@@ -88,7 +192,7 @@ p{
     <h2>Follow Deadlands</h2>
 
     <div class="social-grid">
-        <a href="https://www.instagram.com/deadlands" target="_blank" class="social-card instagram">
+        <a href="https://www.instagram.com/deadlandsband/" target="_blank" class="social-card instagram">
             <h3>Instagram</h3>
         </a>
 
@@ -96,17 +200,35 @@ p{
             <h3>TikTok</h3>
         </a>
 
-        <a href="https://www.youtube.com/@deadlands" target="_blank" class="social-card youtube">
+        <a href="https://www.youtube.com/@deadlandsbandny/featured" target="_blank" class="social-card youtube">
             <h3>YouTube</h3>
         </a>
 
-        <a href="https://open.spotify.com/artist/0xhS0WVP6TzuI5qHcpej9C" target="_blank" class="social-card spotify">
+        <a href="https://open.spotify.com/artist/75ItOLlAwbDFJFx3PhyzTc" target="_blank" class="social-card spotify">
             <h3>Spotify</h3>
         </a>
     </div>
-</div>
+    <div class="fan-form">
+        <h4>Send a Fan Letter</h4>
+
+        <form action="mailto:deadlandsfanmail@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <textarea name="message" placeholder="Your fan letter..." required></textarea>
+
+            <button type="submit">Send Letter</button>
+        </form>
+    </div>
 
 <footer>
+  <div class="subscription" style="margin-top: 40px;">
+        <h5>Subscribe to hear about upcoming shows, albums, and events.</h5>
+
+        <form action="https://example.com" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
     <p>&copy; 2025 Deadlands Official Website - All Rights Reserved.</p>
 </footer>
 

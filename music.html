@@ -45,7 +45,7 @@ nav a:hover {
   margin: auto;
   padding: 20px;
 }
-h2{
+h2, h4 {
     text-align: center; 
   Background-color: grey;
 }
@@ -111,6 +111,22 @@ p{
     text-decoration: underline;
 }
 @media (max-width: 768px) {
+    header {
+        padding: 80px 10px; 
+    }
+    .float-container h3 {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 40px 5px;
+    }
+    .float-container h4 {
+      font-size: 1rem;
+        line-height: 1.6;
+        padding: 5px 2.5px;
+    }
+    .gallery img {
+        width: 100%;
+    }
     .video-box {
         width: 100%;
     }
@@ -127,6 +143,7 @@ p{
     .video-box iframe {
         height: 200px;
     }
+    
 }
 </style>
 <body>
@@ -165,13 +182,13 @@ p{
     </div>
 </div>
 <br>
-    <h2>Discography</h2>
+    <h4>Discography</h4>
 
     <div class="album-list">
 
         <div class="album-card">
             <img src="https://static.wixstatic.com/media/cfd294_8bd767981e3c4740ba2eb4b6120321a3~mv2.jpg/v1/fill/w_490,h_490,al_c,lg_1,q_80/cfd294_8bd767981e3c4740ba2eb4b6120321a3~mv2.jpg" alt="SEVEN. Album Cover">
-            <h3>SEVEN. — EP</h3>
+            <h5>SEVEN. — EP</h5>
             <p>2025</p>
 
             <div class="music-links">
@@ -183,7 +200,7 @@ p{
 
         <div class="album-card">
             <img src="https://ir.soundike2.com/198_845915_sentence-of-myself-ep.jpg" alt=" Sentence Of Myself Album Cover">
-            <h3>Sentence Of Myself — Debut EP</h3>
+            <h6>Sentence Of Myself — Debut EP</h6>
             <p>2022</p>
 
             <div class="music-links">
@@ -197,13 +214,6 @@ p{
 
 </div>
 <footer>
-    <div class="subscription">
-        <h5>Subscribe to hear about upcoming shows, albums, and events.</h5>
-        <form action="#" method="post">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
     <p>&copy; 2025 Deadlands Official Website - All Rights Reserved.</p>
 </footer>
 
